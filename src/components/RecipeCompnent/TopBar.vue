@@ -412,7 +412,7 @@
     width: 70%;
     .myflex('middle');
     text-align: right;
-    flex-direction: row-reverse;
+    //flex-direction: row-reverse;
   }
 
   .MenuItem {
