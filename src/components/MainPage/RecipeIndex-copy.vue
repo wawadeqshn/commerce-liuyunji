@@ -34,15 +34,7 @@
     mounted: function () {
       let that = this;
       Store.commit("ChangeActive", 0); // 切换Topbar高亮
-
       Store.commit("changeFooter",false); // 初始化时隐藏footer
-
-      // 创建日志
-      // that.createLog({
-      //   moduleType: 'menu',
-      //   operateType: '选择菜单',
-      //   operateContent: '博文'
-      // });
     },
   }
 </script>

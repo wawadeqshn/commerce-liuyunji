@@ -10,7 +10,8 @@
             <div class="ArticleItem" v-for="(item,i) in ArticleList" v-bind:key="i"
                  @click="UpdateRouter('RecipeDetail',item)">
               <div class="ArticleItemCover" v-if="item.ArticleCover">
-                <img :src="item.ArticleCover">
+                <!--<img :src="item.ArticleCover">-->
+                <h2 class="ArticleTitleText">{{ item.cureProblem }}</h2>
               </div>
               <div style="flex: 1">
                 <div class="ArticleTitle">

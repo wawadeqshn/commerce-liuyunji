@@ -103,7 +103,7 @@ export default {
       }
       // 关闭骨架屏
       that.BlogDetailSkeletonScreen = false;
-      that.Article.CreateDate = that.DateFormat(that.Article.CreateDate);
+      //that.Article.CreateDate = that.DateFormat(that.Article.CreateDate);
       const rendererMD = new Marked.Renderer();
       rendererMD.image = function (href, title, text) {
         return `<img onclick="showMarkedImage(event, '${href}')" src="${href}" alt="${text}" title="${
