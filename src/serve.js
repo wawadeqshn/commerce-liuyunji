@@ -33,7 +33,7 @@ app.post('/*', (req, res) => {
   req.body.fromUrl = fromUrl;
 
   axios.post(
-    'http://39.104.22.73:8888' + pathName.replace('api',''),
+    'http://localhost:8080' + pathName.replace('api',''),
     req.body
   ).then(function (response) {
     res.end(JSON.stringify(response.data));

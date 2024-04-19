@@ -64,17 +64,6 @@
           name: url,
         });
       },
-
-      openUrl:function(){
-        window.open('http://39.104.22.73:68/#/','_blank');
-        // 创建日志
-        // this.createLog({
-        //   moduleType:'menu',
-        //   operateType:'选择菜单',
-        //   operateContent:'管理后台'
-        // });
-      },
-
       // 伸缩 移动端菜单详情
       OpenMenu: function () {
         this.OpenMobileMenu = !this.OpenMobileMenu;
