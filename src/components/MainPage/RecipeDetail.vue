@@ -32,6 +32,9 @@
           <div class="markdown-body" v-html="Article.Content">
             {{ Article.Content }}
           </div>
+          <div class="OpenMessageSubmitButton" @click="MessageReturn()">
+            返回
+          </div><br/><br/><br/><br/>
         </div>
       </div>
     </div>
@@ -86,22 +89,15 @@ export default {
     // 初始化页面
     InitPage: function () {
       let id = this.$route.query._id;
-      console.log(id);
       var that = this;
       var localDataArray = dataList.data;
       localDataArray.forEach((item,index) => {
         if(item._id==id){
-          console.log("====33====");
           that.Article = item;
         }
       });
-      console.log("====55====");
-      console.table(that.Article);
-      console.table(this.Article);
-      console.table(that.Article==null);
-      console.table(that.Article.CreateDate);
       if(that.Article.CreateDate == undefined || that.Article.CreateDate ==null){
-        console.log("====非法数据===="+that.Article.CreateDate);
+        console.log("警告!非法数据");
         that.BlogDetailSkeletonScreen=false;
         return; 
       }
@@ -131,6 +127,9 @@ export default {
         /<pre>/g,
         "<pre class='language-html'>"
       ); //Markdown格式字符串转html
+    },
+    MessageReturn: function () {
+      this.$router.back()
     }
   }
   

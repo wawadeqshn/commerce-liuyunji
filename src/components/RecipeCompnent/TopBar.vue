@@ -32,7 +32,7 @@
     <div class="MobileMenuDetail" v-if="OpenMobileMenu" @click="OpenMenu()">
       <div class="MoblieMenuDetailContent">
         <div :class="Active == 0 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
-             @click="ChangeRouter('RecipeIndex')">博文666
+             @click="ChangeRouter('RecipeIndex')">小妙招
         </div>
       </div>
       <div class="MoblieMenuDetailShade"></div>
