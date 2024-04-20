@@ -13,18 +13,19 @@
     </div>
     <div class="MobileTopBar">
       <div class="MobileTopBarLogo" @click="ChangeRouter('RecipeIndex')">流云迹-生活小妙招</div>
-      <div class="MenuTopBarIcon" @click="OpenMenu()">
+      <!--<div class="MenuTopBarIcon" @click="OpenMenu()">-->
+      <div class="MenuTopBarIcon">  
 <!--
         <i :class="OpenMobileMenu ? 'iconfont icon-fork IconfontSize' : 'iconfont icon-iconset0194 IconfontSize'"></i>
 -->
-        <div class="MobileMenuSwitch">
-          <span :class="OpenMobileMenu ? 'MenuButtonFirstGoOpen' : 'MenuButtonFirstGoClose'"></span>
-          <span :class="OpenMobileMenu ? 'MenuButtonSecondGoOpen' : 'MenuButtonSecondGoClose'"></span>
-          <span :class="OpenMobileMenu ? 'MenuButtonThirdGoOpen' : 'MenuButtonThirdGoClose'"></span>
+        <!--<div class="MobileMenuSwitch">-->
+          <!--<span :class="OpenMobileMenu ? 'MenuButtonFirstGoOpen' : 'MenuButtonFirstGoClose'"></span>-->
+          <!--<span :class="OpenMobileMenu ? 'MenuButtonSecondGoOpen' : 'MenuButtonSecondGoClose'"></span>-->
+          <!--<span :class="OpenMobileMenu ? 'MenuButtonThirdGoOpen' : 'MenuButtonThirdGoClose'"></span>-->
           <!--<span :class="OpenMobileMenu ? 'MenuButtonFirstGoOpen' : ''"></span>-->
           <!--<span :class="OpenMobileMenu ? 'MenuButtonSecondGoOpen' : ''"></span>-->
           <!--<span :class="OpenMobileMenu ? 'MenuButtonThirdGoOpen' : ''"></span>-->
-        </div>
+        <!--</div>-->
       </div>
     </div>
 

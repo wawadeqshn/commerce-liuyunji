@@ -3,7 +3,7 @@
     <div>
       <div class="TopBarHeight"></div>
       <div class="ArticleDetailHeader">
-        <img :src="Article.ArticleCover" />
+        <!--<img :src="Article.ArticleCover" />-->
         <div class="HeaderContent" v-if="!Article.ArticleCover">
           <span>{{ Article.Title }}</span>
           <span>{{ Article.Summary }}</span>
