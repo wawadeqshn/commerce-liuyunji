@@ -25,11 +25,11 @@
             v-show="BlogDetailSkeletonScreen"
           />
 
-          <h1>{{ Article.Title }}</h1>
+          <h1 style="user-select: none;">{{ Article.Title }}</h1>
           <div class="ArticleCreateTime" v-if="BlogDetailSkeletonScreen">
             发布时间：{{ Article.CreateDate }}
           </div>
-          <div class="markdown-body" v-html="Article.Content">
+          <div class="markdown-body" v-html="Article.Content" style="user-select: none;">
             {{ Article.Content }}
           </div>
           <div class="OpenMessageSubmitButton" @click="MessageReturn()">
