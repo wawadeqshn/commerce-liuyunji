@@ -4,7 +4,7 @@
       <div class="MoveingLight"></div>
       <div class="MediaIndexContent">
         <div class="MediaLeft" @click="ChangeRouter('RecipeIndex')">
-          <span>流云迹-生活小妙招</span>
+          <span>流云迹</span>
         </div>
         <div class="MediaRight">
           <div :class="Active == 0 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('RecipeIndex')">小妙招</div>
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="MobileTopBar">
-      <div class="MobileTopBarLogo" @click="ChangeRouter('RecipeIndex')">流云迹-生活小妙招</div>
+      <div class="MobileTopBarLogo" @click="ChangeRouter('RecipeIndex')">流云迹</div>
       <!--<div class="MenuTopBarIcon" @click="OpenMenu()">-->
       <div class="MenuTopBarIcon">  
 <!--
