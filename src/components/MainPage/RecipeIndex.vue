@@ -28,12 +28,12 @@
                   <div class="ArticleFooterItem" style="border: none">
                     <i class="iconfont icon-shijianzhongbiao iconBlogIndex"></i>{{ item.CreateDate }}
                   </div>
-                  <div class="ArticleFooterItem" style="border: none">
+                  <!--<div class="ArticleFooterItem" style="border: none">
                     <i class="iconfont icon-yueduliang iconBlogIndex"></i>{{ item.articleReadNum ? item.articleReadNum : 0 }}
-                  </div>
-                  <div class="ArticleFooterItem" style="border: none" v-show="item.CommentNum">
+                  </div>-->
+                  <!--<div class="ArticleFooterItem" style="border: none" v-show="item.CommentNum">
                     <i class="iconfont icon-pinglun iconBlogIndex"></i>{{ item.CommentNum }}
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </div>
