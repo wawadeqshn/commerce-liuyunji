@@ -1,7 +1,7 @@
 <template>
     <footer class="Footer" v-show="footerShow">
         <div>版权所有  <span class="RecordNo"></span></div>
-        <div>流云迹</div>
+        <div>流云迹-生活小妙招</div>
     </footer>
 </template>
 
