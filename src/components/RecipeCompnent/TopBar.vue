@@ -4,7 +4,7 @@
       <div class="MoveingLight"></div>
       <div class="MediaIndexContent">
         <div class="MediaLeft" @click="ChangeRouter('RecipeIndex')">
-          <span>生活小妙招</span>
+          <span class="FontFamilyStyle">生活小妙招</span>
         </div>
         <div class="MediaRight">
           <div :class="Active == 0 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('RecipeIndex')">小妙招</div>
@@ -354,6 +354,12 @@
       }
     }
 
+  }
+
+  .FontFamilyStyle {
+    font-family: 'KaiTi', '楷体', serif;
+    font-size: 35px;
+    color: #000;
   }
 
   .MobileTopBarLogo {
