@@ -2,7 +2,7 @@
     <div class="my-scrollbar">
         <TopBar></TopBar>
         <router-view></router-view>
-        <!-- <Footer></Footer> -->
+        <Footer></Footer>
         <Tips></Tips>
         <Loading></Loading>
         <AirPlane></AirPlane>
@@ -11,7 +11,7 @@
 </template>
 <script>
   import TopBar from './components/RecipeCompnent/TopBar'
-  //import Footer from './components/RecipeCompnent/Footer'
+  import Footer from './components/RecipeCompnent/Footer'
   import Tips from './components/RecipeCompnent/Tips'
   import Loading from './components/RecipeCompnent/Loading'
   import AirPlane from './components/RecipeCompnent/Airplane'
@@ -21,7 +21,7 @@
     name: 'app',
     components: {
       TopBar: TopBar,
-      //Footer:Footer,
+      Footer:Footer,
       Tips: Tips,
       Loading:Loading,
       AirPlane:AirPlane,
