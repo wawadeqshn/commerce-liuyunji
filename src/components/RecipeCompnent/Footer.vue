@@ -1,7 +1,7 @@
 <template>
     <footer class="Footer" v-show="footerShow">
-        <div>版权所有  @流云迹.保留所有权利  <span class="RecordNo">京ICP备2024066269号-1</span></div>
-        <div>流云迹-生活小妙招</div>
+        <div>Copyright © 2024~2025 流云迹-生活小妙招  <span class="RecordNo">京ICP备2024066269号-1</span></div>
+        <!--<div>流云迹-生活小妙招</div>-->
     </footer>
 </template>
 

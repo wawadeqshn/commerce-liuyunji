@@ -8,24 +8,25 @@
         </div>
         <div class="MediaRight">
           <div :class="Active == 0 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('RecipeIndex')">小妙招</div>
+          <!--<div :class="Active == 1 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('MessageBoard')">倪海厦老师视频</div>-->
+          <div :class="Active == 2 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('AboutMe')">网站说明</div>
         </div>
       </div>
     </div>
     <div class="MobileTopBar">
       <div class="MobileTopBarLogo" @click="ChangeRouter('RecipeIndex')">生活小妙招</div>
-      <!--<div class="MenuTopBarIcon" @click="OpenMenu()">-->
-      <div class="MenuTopBarIcon">  
+      <div class="MenuTopBarIcon" @click="OpenMenu()">
 <!--
         <i :class="OpenMobileMenu ? 'iconfont icon-fork IconfontSize' : 'iconfont icon-iconset0194 IconfontSize'"></i>
 -->
-        <!--<div class="MobileMenuSwitch">-->
-          <!--<span :class="OpenMobileMenu ? 'MenuButtonFirstGoOpen' : 'MenuButtonFirstGoClose'"></span>-->
-          <!--<span :class="OpenMobileMenu ? 'MenuButtonSecondGoOpen' : 'MenuButtonSecondGoClose'"></span>-->
-          <!--<span :class="OpenMobileMenu ? 'MenuButtonThirdGoOpen' : 'MenuButtonThirdGoClose'"></span>-->
+        <div class="MobileMenuSwitch">
+          <span :class="OpenMobileMenu ? 'MenuButtonFirstGoOpen' : 'MenuButtonFirstGoClose'"></span>
+          <span :class="OpenMobileMenu ? 'MenuButtonSecondGoOpen' : 'MenuButtonSecondGoClose'"></span>
+          <span :class="OpenMobileMenu ? 'MenuButtonThirdGoOpen' : 'MenuButtonThirdGoClose'"></span>
           <!--<span :class="OpenMobileMenu ? 'MenuButtonFirstGoOpen' : ''"></span>-->
           <!--<span :class="OpenMobileMenu ? 'MenuButtonSecondGoOpen' : ''"></span>-->
           <!--<span :class="OpenMobileMenu ? 'MenuButtonThirdGoOpen' : ''"></span>-->
-        <!--</div>-->
+        </div>
       </div>
     </div>
 
@@ -34,6 +35,12 @@
       <div class="MoblieMenuDetailContent">
         <div :class="Active == 0 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
              @click="ChangeRouter('RecipeIndex')">小妙招
+        </div>
+        <!--<div :class="Active == 1 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
+             @click="ChangeRouter('AboutMe')">倪海厦老师视频
+        </div>-->
+        <div :class="Active == 2 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
+             @click="ChangeRouter('AboutMe')">网站说明
         </div>
       </div>
       <div class="MoblieMenuDetailShade"></div>
@@ -59,6 +66,7 @@
        * @constructor
        */
       ChangeRouter: function (url) {
+        console.log(url);
         var That = this;
 
         That.$router.push({
