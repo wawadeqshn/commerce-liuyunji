@@ -22,6 +22,13 @@
             <p>
               <i
                 class="iconfont AboutMeIcon icon-aihao1"
+                style="color: #49a9ee"
+              ></i
+              >随网站一起更新的还有一个文档，有需要文档的可联系我。
+            </p>
+            <p>
+              <i
+                class="iconfont AboutMeIcon icon-aihao1"
                 style="color: #f46e65"
               ></i
               >本网站不对任何未经授权的使用或修改本网站内容的行为承担责任。
