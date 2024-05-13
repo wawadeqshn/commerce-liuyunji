@@ -11,8 +11,12 @@ const RecipeIndexCopy = () =>
 const RecipeDetail = () =>
   import(/* webpackChunkName: "recipePages" */ '@/components/MainPage/RecipeDetail');
 
+const Learn = () =>
+  import(/* webpackChunkName:"simpleMenu" */ '@/components/MainPage/Learn');
+
 const AboutMe = () =>
   import(/* webpackChunkName:"simpleMenu" */ '@/components/MainPage/AboutMe');
+
 Vue.use(Router);
 
 export default new Router({
@@ -33,6 +37,11 @@ export default new Router({
       path: '/RecipeDetail',
       name: 'RecipeDetail',
       component: RecipeDetail
+    },
+    {
+      path: '/Learn',
+      name: 'Learn',
+      component: Learn
     },
     {
       path: '/AboutMe',

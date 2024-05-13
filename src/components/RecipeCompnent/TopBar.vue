@@ -8,7 +8,7 @@
         </div>
         <div class="MediaRight">
           <div :class="Active == 0 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('RecipeIndex')">小妙招</div>
-          <!--<div :class="Active == 1 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('MessageBoard')">倪海厦老师视频</div>-->
+          <div :class="Active == 1 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('Learn')">倪师</div>
           <div :class="Active == 2 ? 'MenuItemActive' : 'MenuItem'" @click="ChangeRouter('AboutMe')">网站说明</div>
         </div>
       </div>
@@ -66,7 +66,6 @@
        * @constructor
        */
       ChangeRouter: function (url) {
-        console.log(url);
         var That = this;
 
         That.$router.push({

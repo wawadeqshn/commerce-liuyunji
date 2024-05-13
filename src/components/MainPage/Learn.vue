@@ -4,41 +4,20 @@
       <div class="FlexContent">
         <div class="LeftPart">
           <div class="BigBlock main-text">
-            <div class="TitleFontLine">网站说明</div>
+            <div class="TitleFontLine">倪师人纪天纪云盘地址分享</div>
             <p>
               <i
                 class="iconfont icon-aihao1 AboutMeIcon"
                 style="color: #49a9ee"
               ></i
-              >建站初衷：提供一个日常生活经验总结资源库，提升日常生活必备技能，能百病自疗。传播中医文化和知识，增加社会对中医的认可。
+              >视频地址:  https://pan.baidu.com/s/1eb267eqN1odx7aaimrN42A
             </p>
             <p>
               <i
                 class="iconfont AboutMeIcon icon-aihao1"
                 style="color: #49a9ee"
               ></i
-              >网站信息会持续更新，如果您有好的办法，也可随时联系我。
-            </p>
-            <p>
-              <i
-                class="iconfont AboutMeIcon icon-aihao1"
-                style="color: #49a9ee"
-              ></i
-              >随网站一起更新的还有一个文档，有需要文档的可联系我。
-            </p>
-            <p>
-              <i
-                class="iconfont AboutMeIcon icon-aihao1"
-                style="color: #f46e65"
-              ></i
-              >本网站不对任何未经授权的使用或修改本网站内容的行为承担责任。
-            </p>
-            <p>
-              <i
-                class="iconfont AboutMeIcon icon-aihao1"
-                style="color: #f46e65"
-              ></i
-              >本网站不对任何未经授权的复制、转载、摘编、整合等行为承担责任。
+              >提取码: 1qaz。
             </p>
           </div>
 
@@ -122,7 +101,7 @@ export default {
     }
   },
   mounted: function () {
-    Store.commit("ChangeActive", 2); // 切换Topbar高亮
+    Store.commit("ChangeActive", 1); // 切换Topbar高亮
     Store.commit("changeFooter",true); // 展示footer 
   },
 };
