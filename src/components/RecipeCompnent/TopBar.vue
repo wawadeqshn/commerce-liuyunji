@@ -36,9 +36,9 @@
         <div :class="Active == 0 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
              @click="ChangeRouter('RecipeIndex')">小妙招
         </div>
-        <!--<div :class="Active == 1 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
-             @click="ChangeRouter('AboutMe')">倪海厦老师视频
-        </div>-->
+        <div :class="Active == 1 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
+             @click="ChangeRouter('Learn')">倪师
+        </div>
         <div :class="Active == 2 ? 'MobileMenuDetailItemActive' : 'MobileMenuDetailItem'"
              @click="ChangeRouter('AboutMe')">网站说明
         </div>
